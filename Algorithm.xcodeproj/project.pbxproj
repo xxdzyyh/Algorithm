@@ -11,6 +11,7 @@
 		D4428FAB21CB79740094ADAB /* XFMutableArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FA921CB79740094ADAB /* XFMutableArray.cpp */; };
 		D4428FAE21CB7ADE0094ADAB /* Demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FAC21CB7ADE0094ADAB /* Demo.cpp */; };
 		D4428FB121CB7E8F0094ADAB /* XFLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FAF21CB7E8F0094ADAB /* XFLink.cpp */; };
+		D4428FF421CC82E50094ADAB /* XFPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FF221CC82E50094ADAB /* XFPoint.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,8 @@
 		D4428FAD21CB7ADE0094ADAB /* Demo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Demo.hpp; sourceTree = "<group>"; };
 		D4428FAF21CB7E8F0094ADAB /* XFLink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XFLink.cpp; sourceTree = "<group>"; };
 		D4428FB021CB7E8F0094ADAB /* XFLink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XFLink.hpp; sourceTree = "<group>"; };
+		D4428FF221CC82E50094ADAB /* XFPoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XFPoint.cpp; sourceTree = "<group>"; };
+		D4428FF321CC82E50094ADAB /* XFPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XFPoint.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				D4428FAD21CB7ADE0094ADAB /* Demo.hpp */,
 				D4428FAF21CB7E8F0094ADAB /* XFLink.cpp */,
 				D4428FB021CB7E8F0094ADAB /* XFLink.hpp */,
+				D4428FF221CC82E50094ADAB /* XFPoint.cpp */,
+				D4428FF321CC82E50094ADAB /* XFPoint.hpp */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				D4428FAB21CB79740094ADAB /* XFMutableArray.cpp in Sources */,
 				D4428FA321CB79540094ADAB /* main.cpp in Sources */,
 				D4428FB121CB7E8F0094ADAB /* XFLink.cpp in Sources */,
+				D4428FF421CC82E50094ADAB /* XFPoint.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

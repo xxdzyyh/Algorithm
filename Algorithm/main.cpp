@@ -8,10 +8,13 @@
 
 #include <iostream>
 #include "Demo.hpp"
+#include "XFPoint.hpp"
 
 int main(int argc, const char * argv[]) {
 
-    testXFMutableArray();
+//    testXFMutableArray();
+    
+    testPoint4();
     
     return 0;
 }

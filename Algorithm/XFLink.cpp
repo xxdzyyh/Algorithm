@@ -31,7 +31,8 @@ void add(LinkNode **headNode,int value) {
     pNew -> nextNode = NULL;
     
     if (*headNode == NULL) {
-        // 因为pNew是零时变量,出了作用于就会被释放，如果用headNode = pNew,headNode也会为空
+        // 因为pNew是零时变量,出了作用域就会被释放，如果用headNode = pNew,headNode也会为空
+        // 传个指针的指针
         *headNode = pNew;
     } else {
         
