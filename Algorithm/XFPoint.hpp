@@ -13,5 +13,6 @@
 
 void testPoint();
 void testPoint4();
+void testSwap();
 
 #endif /* XFPoint_hpp */

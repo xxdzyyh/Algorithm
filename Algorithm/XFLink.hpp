@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void testLink();
+
 #endif /* XFLink_hpp */

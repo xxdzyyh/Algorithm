@@ -20,20 +20,80 @@
 struct LinkNode {
     int value;
     LinkNode* nextNode;
+    
+    ~LinkNode() {
+        printf("~LinkNode\n");
+    }
 };
+
+
+void log(LinkNode *link) {
+    if (link == NULL) {
+        return;
+    }
+    printf("%d,",link -> value);
+    while (link -> nextNode) {
+        printf("%d,",link -> nextNode -> value);
+        link = link -> nextNode;
+    }
+    printf("\n");
+}
+
+void errorAdd(LinkNode* headNode,int value) {
+    
+    // 创建一个节点
+    // pNeW分配在栈上面，LinkNode实例在堆上面
+    LinkNode *pNew = new LinkNode();
+    
+    pNew -> value = value;
+    pNew -> nextNode = NULL;
+    
+    // 如果headNode = NULL需要重新赋
+    if (headNode == NULL) {
+        // 修改形参的值不会影响到实参
+        /**
+            temp         first  head pNew   head
+            
+            LinkNode      a1    a1    a4      a4
+            
+            a1            a2    a3    a5      a2
+         */
+        // 虽然这里设置了，但是外界的first还是NULL
+        headNode = pNew;
+        
+        log(headNode);
+        
+    } else {
+        LinkNode *pNode = headNode;
+        
+        while (pNode -> nextNode != NULL) {
+            pNode = pNode -> nextNode;
+        }
+        
+        pNode -> nextNode = pNew;
+    }
+}
 
 void add(LinkNode **headNode,int value) {
     
     // 创建一个节点
+    // pNeW分配在栈上面，LinkNode实例在堆上面
     LinkNode *pNew = new LinkNode();
     
     pNew -> value = value;
     pNew -> nextNode = NULL;
     
     if (*headNode == NULL) {
-        // 因为pNew是零时变量,出了作用域就会被释放，如果用headNode = pNew,headNode也会为空
-        // 传个指针的指针
+        /**
+         temp         first  head pNew    first
+         
+         LinkNode      a1    a2    a4      a4
+         
+         a1            a2    a3    a5      a2
+         */
         *headNode = pNew;
+        
+        log(*headNode);
     } else {
         
         LinkNode *pNode = *headNode;
@@ -44,9 +104,21 @@ void add(LinkNode **headNode,int value) {
         
         pNode -> nextNode = pNew;
     }
-    
 }
 
-void test() {
+
+
+void testLink() {
     
+//    LinkNode *first = new LinkNode();
+ 
+//    first -> value = 1;
+    
+    LinkNode *first = NULL;
+    
+    log(first);
+    
+    add(&first, 2);
+    
+    log(first);
 }

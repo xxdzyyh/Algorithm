@@ -16,9 +16,11 @@
 // --------------------------------------------------------------- 
 
 void pointParas(int **p2) {
-    int b = 3;
-    
     printf("参数传递后参数地址：%p\n",&p2);
+    
+    int b = 3;
+    printf("%p = &b\n",&b);
+    
     *p2 = &b;
 }
 
@@ -31,6 +33,7 @@ void testPoint4() {
     
     pointParas(&p);
     
+    printf("%p = p\n",p);
     printf("%d = p\n",*p);
 }
 
@@ -92,3 +95,35 @@ void testPoint() {
     testPoint4();
 }
 
+void errorSwap(int a,int b) {
+    printf("errorSwap para &a=%p,&b=%p\n",&a,&b);
+    int t = a;
+    a = b;
+    b = t;    
+}
+
+void swap(int *a,int *b) {
+    printf("swap para &a=%p,&b=%p\n",&a,&b);
+    
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+void testSwap() {
+    
+    int a = 1;
+    int b = 4;
+    
+    printf("a=%d,b=%d\n",a,b);
+    printf("testSwap &a=%p,&b=%p\n",&a,&b);
+    
+    errorSwap(a, b);
+    
+    printf("after errorSwap a=%d,b=%d\n",a,b);
+    
+    swap(&a, &b);
+    
+    printf("after swap a=%d,b=%d\n",a,b);
+    
+}

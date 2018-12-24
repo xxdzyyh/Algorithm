@@ -9,12 +9,18 @@
 #include <iostream>
 #include "Demo.hpp"
 #include "XFPoint.hpp"
+#include "XFLink.hpp"
 
 int main(int argc, const char * argv[]) {
 
 //    testXFMutableArray();
     
-    testPoint4();
+//    testPoint4();
+    
+//
+//    testSwap();
+
+    testLink();
     
     return 0;
 }
