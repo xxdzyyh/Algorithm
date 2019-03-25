@@ -106,19 +106,53 @@ void add(LinkNode **headNode,int value) {
     }
 }
 
+void removeNode(LinkNode **pHead,int value) {
+    
+    if (pHead == nullptr || *pHead == nullptr) {
+        return;
+    }
+    
+    LinkNode *pNodeToDeleted = nullptr;
+    
+    if ((*pHead)->value == value) {
+        pNodeToDeleted = *pHead;
+        *pHead = (*pHead)->nextNode;
+    } else {
+        LinkNode *pNode = *pHead;
+        
+        while (pNode->nextNode != nullptr && pNode->nextNode->value != value) {
+            pNode = pNode->nextNode;
+        }
+        
+        if (pNode->nextNode != nullptr && pNode->nextNode->value == value) {
+            pNodeToDeleted = pNode->nextNode;
+            // 修改链表指向
+            pNode->nextNode = pNode->nextNode->nextNode;
+        }
+    }
+    
+    if (pNodeToDeleted != nullptr) {
+        delete pNodeToDeleted;
+        pNodeToDeleted = nullptr;
+    }
+}
 
+void reverseLogLink(LinkNode *pHead) {
+    
+}
 
 void testLink() {
     
-//    LinkNode *first = new LinkNode();
+    LinkNode *first = new LinkNode();
  
-//    first -> value = 1;
-    
-    LinkNode *first = NULL;
+    first -> value = 1;
     
     log(first);
-    
     add(&first, 2);
     
+    log(first);    
+    add(&first, 3);
+
+    removeNode(&first, 2);
     log(first);
 }

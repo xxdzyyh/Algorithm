@@ -13,6 +13,13 @@
 		D4428FB121CB7E8F0094ADAB /* XFLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FAF21CB7E8F0094ADAB /* XFLink.cpp */; };
 		D4428FF421CC82E50094ADAB /* XFPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FF221CC82E50094ADAB /* XFPoint.cpp */; };
 		D4428FF721D0D20B0094ADAB /* StackOrHead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FF521D0D20B0094ADAB /* StackOrHead.cpp */; };
+		D4428FFA21D1C8420094ADAB /* XFStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4428FF821D1C8420094ADAB /* XFStack.cpp */; };
+		D443BCD422321B2600CAB9E6 /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BCD222321B2600CAB9E6 /* BubbleSort.cpp */; };
+		D443BD092235FFDB00CAB9E6 /* Complexity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD072235FFDB00CAB9E6 /* Complexity.cpp */; };
+		D443BD0C2236317700CAB9E6 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD0A2236317700CAB9E6 /* QuickSort.cpp */; };
+		D443BD0F22365E7700CAB9E6 /* sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD0D22365E7700CAB9E6 /* sum.cpp */; };
+		D48FD7792248709000F98977 /* InsertSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D48FD7772248709000F98977 /* InsertSort.cpp */; };
+		D4E263B6222FCC5B00E24287 /* StringReplace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E263B4222FCC5B00E24287 /* StringReplace.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +46,20 @@
 		D4428FF321CC82E50094ADAB /* XFPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XFPoint.hpp; sourceTree = "<group>"; };
 		D4428FF521D0D20B0094ADAB /* StackOrHead.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StackOrHead.cpp; sourceTree = "<group>"; };
 		D4428FF621D0D20B0094ADAB /* StackOrHead.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StackOrHead.hpp; sourceTree = "<group>"; };
+		D4428FF821D1C8420094ADAB /* XFStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XFStack.cpp; sourceTree = "<group>"; };
+		D4428FF921D1C8420094ADAB /* XFStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XFStack.hpp; sourceTree = "<group>"; };
+		D443BCD222321B2600CAB9E6 /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
+		D443BCD322321B2600CAB9E6 /* BubbleSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BubbleSort.hpp; sourceTree = "<group>"; };
+		D443BD072235FFDB00CAB9E6 /* Complexity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Complexity.cpp; sourceTree = "<group>"; };
+		D443BD082235FFDB00CAB9E6 /* Complexity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Complexity.hpp; sourceTree = "<group>"; };
+		D443BD0A2236317700CAB9E6 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
+		D443BD0B2236317700CAB9E6 /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
+		D443BD0D22365E7700CAB9E6 /* sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sum.cpp; sourceTree = "<group>"; };
+		D443BD0E22365E7700CAB9E6 /* sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sum.hpp; sourceTree = "<group>"; };
+		D48FD7772248709000F98977 /* InsertSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertSort.cpp; sourceTree = "<group>"; };
+		D48FD7782248709000F98977 /* InsertSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InsertSort.hpp; sourceTree = "<group>"; };
+		D4E263B4222FCC5B00E24287 /* StringReplace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringReplace.cpp; sourceTree = "<group>"; };
+		D4E263B5222FCC5B00E24287 /* StringReplace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringReplace.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +92,7 @@
 		D4428FA121CB79540094ADAB /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				D443BCD122321AFB00CAB9E6 /* Sort */,
 				D4428FA221CB79540094ADAB /* main.cpp */,
 				D4428FA921CB79740094ADAB /* XFMutableArray.cpp */,
 				D4428FAC21CB7ADE0094ADAB /* Demo.cpp */,
@@ -81,8 +103,29 @@
 				D4428FF321CC82E50094ADAB /* XFPoint.hpp */,
 				D4428FF521D0D20B0094ADAB /* StackOrHead.cpp */,
 				D4428FF621D0D20B0094ADAB /* StackOrHead.hpp */,
+				D4428FF821D1C8420094ADAB /* XFStack.cpp */,
+				D4428FF921D1C8420094ADAB /* XFStack.hpp */,
+				D4E263B4222FCC5B00E24287 /* StringReplace.cpp */,
+				D4E263B5222FCC5B00E24287 /* StringReplace.hpp */,
+				D443BD072235FFDB00CAB9E6 /* Complexity.cpp */,
+				D443BD082235FFDB00CAB9E6 /* Complexity.hpp */,
+				D443BD0D22365E7700CAB9E6 /* sum.cpp */,
+				D443BD0E22365E7700CAB9E6 /* sum.hpp */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		D443BCD122321AFB00CAB9E6 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				D443BCD222321B2600CAB9E6 /* BubbleSort.cpp */,
+				D443BCD322321B2600CAB9E6 /* BubbleSort.hpp */,
+				D443BD0A2236317700CAB9E6 /* QuickSort.cpp */,
+				D443BD0B2236317700CAB9E6 /* QuickSort.hpp */,
+				D48FD7772248709000F98977 /* InsertSort.cpp */,
+				D48FD7782248709000F98977 /* InsertSort.hpp */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +187,16 @@
 				D4428FAE21CB7ADE0094ADAB /* Demo.cpp in Sources */,
 				D4428FF721D0D20B0094ADAB /* StackOrHead.cpp in Sources */,
 				D4428FAB21CB79740094ADAB /* XFMutableArray.cpp in Sources */,
+				D4428FFA21D1C8420094ADAB /* XFStack.cpp in Sources */,
+				D443BD0C2236317700CAB9E6 /* QuickSort.cpp in Sources */,
 				D4428FA321CB79540094ADAB /* main.cpp in Sources */,
+				D443BD092235FFDB00CAB9E6 /* Complexity.cpp in Sources */,
+				D4E263B6222FCC5B00E24287 /* StringReplace.cpp in Sources */,
 				D4428FB121CB7E8F0094ADAB /* XFLink.cpp in Sources */,
+				D443BD0F22365E7700CAB9E6 /* sum.cpp in Sources */,
+				D443BCD422321B2600CAB9E6 /* BubbleSort.cpp in Sources */,
 				D4428FF421CC82E50094ADAB /* XFPoint.cpp in Sources */,
+				D48FD7792248709000F98977 /* InsertSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
