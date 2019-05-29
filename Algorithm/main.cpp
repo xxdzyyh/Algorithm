@@ -14,6 +14,8 @@
 #include "BubbleSort.hpp"
 #include "QuickSort.hpp"
 #include "InsertSort.hpp"
+#include "MyString/LearnString.hpp"
+#include "Dynamic/DisSubArray.hpp"
 
 int main(int argc, const char * argv[]) {
 
@@ -42,6 +44,16 @@ int main(int argc, const char * argv[]) {
     for (int i=0; i<8; i++) {
         printf("%d\n",number[i]);
     }
+    
+    char s[30] = "asdf,qwer";
+    
+    charReverse(s);
+    
+    int number2[8] = {389, 207, 155, 300, 299, 170, 158, 65};
+    int count[8] = {};
+    
+    maxDis(8, count, number2);
+    maxQueue(number2, 8);
     
     return 0;
 }

@@ -18,7 +18,11 @@
 		D443BD092235FFDB00CAB9E6 /* Complexity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD072235FFDB00CAB9E6 /* Complexity.cpp */; };
 		D443BD0C2236317700CAB9E6 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD0A2236317700CAB9E6 /* QuickSort.cpp */; };
 		D443BD0F22365E7700CAB9E6 /* sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D443BD0D22365E7700CAB9E6 /* sum.cpp */; };
+		D4672E77229D2EF400A5DE44 /* DisSubArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4672E75229D2EF400A5DE44 /* DisSubArray.cpp */; };
+		D46F256C226D96E800FB12F5 /* LearnString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D46F256A226D96E800FB12F5 /* LearnString.cpp */; };
+		D46F2570226DBF9600FB12F5 /* TreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D46F256F226DBF9600FB12F5 /* TreeVC.m */; };
 		D48FD7792248709000F98977 /* InsertSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D48FD7772248709000F98977 /* InsertSort.cpp */; };
+		D4CEB6DF225C849F007E4B55 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6DD225C849F007E4B55 /* Tree.cpp */; };
 		D4E263B6222FCC5B00E24287 /* StringReplace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E263B4222FCC5B00E24287 /* StringReplace.cpp */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +60,16 @@
 		D443BD0B2236317700CAB9E6 /* QuickSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuickSort.hpp; sourceTree = "<group>"; };
 		D443BD0D22365E7700CAB9E6 /* sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sum.cpp; sourceTree = "<group>"; };
 		D443BD0E22365E7700CAB9E6 /* sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sum.hpp; sourceTree = "<group>"; };
+		D4672E75229D2EF400A5DE44 /* DisSubArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DisSubArray.cpp; sourceTree = "<group>"; };
+		D4672E76229D2EF400A5DE44 /* DisSubArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DisSubArray.hpp; sourceTree = "<group>"; };
+		D46F256A226D96E800FB12F5 /* LearnString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LearnString.cpp; sourceTree = "<group>"; };
+		D46F256B226D96E800FB12F5 /* LearnString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LearnString.hpp; sourceTree = "<group>"; };
+		D46F256E226DBF9600FB12F5 /* TreeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeVC.h; sourceTree = "<group>"; };
+		D46F256F226DBF9600FB12F5 /* TreeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeVC.m; sourceTree = "<group>"; };
 		D48FD7772248709000F98977 /* InsertSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertSort.cpp; sourceTree = "<group>"; };
 		D48FD7782248709000F98977 /* InsertSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InsertSort.hpp; sourceTree = "<group>"; };
+		D4CEB6DD225C849F007E4B55 /* Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tree.cpp; sourceTree = "<group>"; };
+		D4CEB6DE225C849F007E4B55 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		D4E263B4222FCC5B00E24287 /* StringReplace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringReplace.cpp; sourceTree = "<group>"; };
 		D4E263B5222FCC5B00E24287 /* StringReplace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringReplace.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +104,9 @@
 		D4428FA121CB79540094ADAB /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				D4672E74229D2E8900A5DE44 /* Dynamic */,
+				D46F2568226D96B600FB12F5 /* MyString */,
+				D4CEB6DC225C848D007E4B55 /* Tree */,
 				D443BCD122321AFB00CAB9E6 /* Sort */,
 				D4428FA221CB79540094ADAB /* main.cpp */,
 				D4428FA921CB79740094ADAB /* XFMutableArray.cpp */,
@@ -126,6 +141,43 @@
 				D48FD7782248709000F98977 /* InsertSort.hpp */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		D4672E74229D2E8900A5DE44 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E75229D2EF400A5DE44 /* DisSubArray.cpp */,
+				D4672E76229D2EF400A5DE44 /* DisSubArray.hpp */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		D46F2568226D96B600FB12F5 /* MyString */ = {
+			isa = PBXGroup;
+			children = (
+				D46F256A226D96E800FB12F5 /* LearnString.cpp */,
+				D46F256B226D96E800FB12F5 /* LearnString.hpp */,
+			);
+			path = MyString;
+			sourceTree = "<group>";
+		};
+		D46F256D226DBF5700FB12F5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D4CEB6DC225C848D007E4B55 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				D46F256D226DBF5700FB12F5 /* New Group */,
+				D4CEB6DD225C849F007E4B55 /* Tree.cpp */,
+				D4CEB6DE225C849F007E4B55 /* Tree.hpp */,
+				D46F256E226DBF9600FB12F5 /* TreeVC.h */,
+				D46F256F226DBF9600FB12F5 /* TreeVC.m */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,14 +239,18 @@
 				D4428FAE21CB7ADE0094ADAB /* Demo.cpp in Sources */,
 				D4428FF721D0D20B0094ADAB /* StackOrHead.cpp in Sources */,
 				D4428FAB21CB79740094ADAB /* XFMutableArray.cpp in Sources */,
+				D4CEB6DF225C849F007E4B55 /* Tree.cpp in Sources */,
 				D4428FFA21D1C8420094ADAB /* XFStack.cpp in Sources */,
 				D443BD0C2236317700CAB9E6 /* QuickSort.cpp in Sources */,
 				D4428FA321CB79540094ADAB /* main.cpp in Sources */,
 				D443BD092235FFDB00CAB9E6 /* Complexity.cpp in Sources */,
+				D4672E77229D2EF400A5DE44 /* DisSubArray.cpp in Sources */,
 				D4E263B6222FCC5B00E24287 /* StringReplace.cpp in Sources */,
 				D4428FB121CB7E8F0094ADAB /* XFLink.cpp in Sources */,
 				D443BD0F22365E7700CAB9E6 /* sum.cpp in Sources */,
 				D443BCD422321B2600CAB9E6 /* BubbleSort.cpp in Sources */,
+				D46F2570226DBF9600FB12F5 /* TreeVC.m in Sources */,
+				D46F256C226D96E800FB12F5 /* LearnString.cpp in Sources */,
 				D4428FF421CC82E50094ADAB /* XFPoint.cpp in Sources */,
 				D48FD7792248709000F98977 /* InsertSort.cpp in Sources */,
 			);
