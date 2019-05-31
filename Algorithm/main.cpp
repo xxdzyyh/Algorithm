@@ -29,31 +29,32 @@ int main(int argc, const char * argv[]) {
 //    replace(string, 100);
 //    
 //    printf("%s\n",string);
-
-    //
-    int number[8] = {8,7,6,5,4,3,2,1};
-    
-//    bubble_sort(number, 8);
-    
-//    twoSum(number, 8, 15);
-    
-    shell_sort(number, 8);
-    
-    my_qsort(number, 0, 7);
-    
-    for (int i=0; i<8; i++) {
-        printf("%d\n",number[i]);
-    }
-    
-    char s[30] = "asdf,qwer";
-    
-    charReverse(s);
-    
-    int number2[8] = {389, 207, 155, 300, 299, 170, 158, 65};
-    int count[8] = {};
-    
-    maxDis(8, count, number2);
-    maxQueue(number2, 8);
+//
+//    //
+//    int number[8] = {8,7,6,5,4,3,2,1};
+//    
+////    bubble_sort(number, 8);
+//    
+////    twoSum(number, 8, 15);
+//    
+//    shell_sort(number, 8);
+//    
+//    my_qsort(number, 0, 7);
+//    
+//    for (int i=0; i<8; i++) {
+//        printf("%d\n",number[i]);
+//    }
+//    
+//    char s[30] = "asdf,qwer";
+//    
+//    charReverse(s);
+//    
+//    int number2[8] = {389, 207, 155, 300, 299, 170, 158, 65};
+//    int count[8] = {};
+//    
+//    maxDis(8, count, number2);
+//    maxQueue(number2, 8);
+    findBoom();
     
     return 0;
 }

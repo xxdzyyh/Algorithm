@@ -13,5 +13,6 @@
 
 int maxDis(int a,int count[],int target[]);
 int maxQueue(int high[],int length);
+void findBoom();
 
 #endif /* DisSubArray_hpp */

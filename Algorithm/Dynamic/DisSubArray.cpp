@@ -107,3 +107,85 @@ int maxQueue(int high[],int length) {
 }
 
 
+//  在一个地图上有N个地窖（N<=200）,每个地窖中埋有一定数量的地雷。
+//  同时，给出地窖之间的连接路径，并规定路径都是单向的,
+//  也不存在可以从一个地窖出发经过若干地窖后又回到原来地窖的路径。
+//  某人可以从任一处开始挖地雷，然后沿着指出的连接往下挖（仅能选择一条路径），
+//  当无连接时挖地雷工作结束。设计一个挖地雷的方案，使他能挖到最多的地雷。
+
+//  设置连通路径以后，这个地雷分布其实可以用一棵树来表示，如此就是求树从根节点往下遍历，
+
+//  随便选一个起点 p,所有点分成两部分，p 和 p 以外 N-1 个点，那么对 p 点而言
+//  Max(p) = Max(![p]) + BoomCount[p]
+//  求出所有点开始能得到的Max,取最大值
+
+#define N 7
+
+void findBoom() {
+    
+    // N = 7
+    // BoomCount[7] = {4 9 1 3 5 2 6}
+    // 0->1
+    // 1->3
+    // 2->3
+    // 2->6
+    // 3->5
+    // 3->6
+
+    int access[N][N];
+    
+    access[0][1] = 1;
+    access[1][3] = 1;
+    access[2][3] = 1;
+    access[2][6] = 1;
+    access[3][5] = 1;
+    access[3][6] = 1;
+
+    struct Point {
+        int x;
+        int y;
+        
+        Point(int x,int y) {
+            this->x = x;
+            this->y = y;
+        }
+    };
+    
+    Point points[N] = {Point(0,1),Point(1,3),Point(2,3),Point(2,6),Point(3,5),Point(3,6),Point(4,5)};
+
+    
+    // 记录每个点最大挖雷数
+    int max[N];
+    int boomCount[N] = {4, 9, 1, 3, 5, 2, 6};
+    int res = 0;
+    
+    // 遍历所有点
+    for (int x=0; x<N; x++) {
+        for (int y=x+1;y<N;y++) {
+            if (access[x][y] == 1) {
+                printf("x=%d,y=%d\n",x,y);
+                
+                if (x == 0) {
+                    max[0] = boomCount[x]+boomCount[y];
+                }
+                 
+                for (int j=0; j<N; j++) {
+                    Point point = points[j];
+                    
+                    if (point.x < x && point.y == x) {
+                        printf("x=%d,y=%d\n",x,y);
+                        max[x] = max[x] > (max[point.x] + boomCount[y]) ? max[x] : (max[point.x] + boomCount[y]);
+                         printf("max[%d]=%d\n",x,max[x]);
+                    }
+                }
+               
+               
+            }
+        }
+    }
+    
+    
+    
+    printf("%d",res);
+}
+
