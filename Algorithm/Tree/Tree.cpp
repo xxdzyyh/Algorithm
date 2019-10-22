@@ -8,21 +8,17 @@
 
 #include "Tree.hpp"
 
-
-struct BinaryTreeNode {
-    int m_nValue;
-    BinaryTreeNode *m_pLeft;
-    BinaryTreeNode *m_pRight;
-};
-
-//BinaryTreeNode *rebuildTree(int* preorder,int* inorder,int length) {
-//    
-//    if (preorder == nullptr || inorder == nullptr || length <= 0) {
-//        return nullptr;
-//    }
-//    
-//    
-//}
+void reverseNode(BinaryTreeNode *originNode) {
+    
+    if (originNode -> m_pLeft != nullptr ||  originNode-> m_pRight) {
+        BinaryTreeNode *temp = originNode -> m_pLeft;
+        originNode->m_pLeft = originNode->m_pRight;
+        originNode->m_pRight = temp;
+        
+        reverseNode(originNode->m_pLeft);
+        reverseNode(originNode->m_pRight);
+    }
+}
 
 BinaryTreeNode *rebuildCore(int* startPreoder,int *endPreorder,int* startInorder,int* endInorder) {
         

@@ -16,6 +16,7 @@
 #include "InsertSort.hpp"
 #include "MyString/LearnString.hpp"
 #include "Dynamic/DisSubArray.hpp"
+#include "Tree.hpp"
 
 int main(int argc, const char * argv[]) {
 
@@ -54,7 +55,25 @@ int main(int argc, const char * argv[]) {
 //    
 //    maxDis(8, count, number2);
 //    maxQueue(number2, 8);
-    findBoom();
+//    findBoom();
+    
+    
+    BinaryTreeNode *node = new BinaryTreeNode();
+    
+    node->m_nValue = 1;
+    BinaryTreeNode *s1node = new BinaryTreeNode();
+    s1node->m_nValue = 2;
+    BinaryTreeNode *s2node = new BinaryTreeNode();
+    s2node->m_nValue = 3;
+    
+    node->m_pLeft = s1node;
+    node->m_pRight = s2node;
+    
+    reverseNode(node);
+    
+    printf("%d",node->m_nValue);
+    printf("%d",node->m_pLeft->m_nValue);
+    printf("%d",node->m_pRight->m_nValue);
     
     return 0;
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.learn. All rights reserved.
 //
 /**
-            10
+          10
  
         6         14
 
@@ -29,5 +29,13 @@
 #define Tree_hpp
 
 #include <stdio.h>
+
+struct BinaryTreeNode {
+    int m_nValue;
+    BinaryTreeNode *m_pLeft;
+    BinaryTreeNode *m_pRight;
+};
+
+void reverseNode(BinaryTreeNode *originNode);
 
 #endif /* Tree_hpp */

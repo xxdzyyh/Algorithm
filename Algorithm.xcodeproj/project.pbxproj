@@ -24,6 +24,7 @@
 		D48FD7792248709000F98977 /* InsertSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D48FD7772248709000F98977 /* InsertSort.cpp */; };
 		D4CEB6DF225C849F007E4B55 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6DD225C849F007E4B55 /* Tree.cpp */; };
 		D4E263B6222FCC5B00E24287 /* StringReplace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4E263B4222FCC5B00E24287 /* StringReplace.cpp */; };
+		D4EE65E8234DAF4C00A69DBC /* TwoNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4EE65E6234DAF4C00A69DBC /* TwoNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +73,8 @@
 		D4CEB6DE225C849F007E4B55 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		D4E263B4222FCC5B00E24287 /* StringReplace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringReplace.cpp; sourceTree = "<group>"; };
 		D4E263B5222FCC5B00E24287 /* StringReplace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringReplace.hpp; sourceTree = "<group>"; };
+		D4EE65E6234DAF4C00A69DBC /* TwoNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoNode.cpp; sourceTree = "<group>"; };
+		D4EE65E7234DAF4C00A69DBC /* TwoNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwoNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,10 +175,12 @@
 			isa = PBXGroup;
 			children = (
 				D46F256D226DBF5700FB12F5 /* New Group */,
-				D4CEB6DD225C849F007E4B55 /* Tree.cpp */,
 				D4CEB6DE225C849F007E4B55 /* Tree.hpp */,
+				D4CEB6DD225C849F007E4B55 /* Tree.cpp */,
 				D46F256E226DBF9600FB12F5 /* TreeVC.h */,
 				D46F256F226DBF9600FB12F5 /* TreeVC.m */,
+				D4EE65E6234DAF4C00A69DBC /* TwoNode.cpp */,
+				D4EE65E7234DAF4C00A69DBC /* TwoNode.hpp */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EE65E8234DAF4C00A69DBC /* TwoNode.cpp in Sources */,
 				D4428FAE21CB7ADE0094ADAB /* Demo.cpp in Sources */,
 				D4428FF721D0D20B0094ADAB /* StackOrHead.cpp in Sources */,
 				D4428FAB21CB79740094ADAB /* XFMutableArray.cpp in Sources */,
